@@ -1,0 +1,14 @@
+C:\Programmering 01\vinterproject\bin\Debug\net8.0\vinterproject.exe
+C:\Programmering 01\vinterproject\bin\Debug\net8.0\vinterproject.deps.json
+C:\Programmering 01\vinterproject\bin\Debug\net8.0\vinterproject.runtimeconfig.json
+C:\Programmering 01\vinterproject\bin\Debug\net8.0\vinterproject.dll
+C:\Programmering 01\vinterproject\bin\Debug\net8.0\vinterproject.pdb
+C:\Programmering 01\vinterproject\obj\Debug\net8.0\vinterproject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programmering 01\vinterproject\obj\Debug\net8.0\vinterproject.AssemblyInfoInputs.cache
+C:\Programmering 01\vinterproject\obj\Debug\net8.0\vinterproject.AssemblyInfo.cs
+C:\Programmering 01\vinterproject\obj\Debug\net8.0\vinterproject.csproj.CoreCompileInputs.cache
+C:\Programmering 01\vinterproject\obj\Debug\net8.0\vinterproject.dll
+C:\Programmering 01\vinterproject\obj\Debug\net8.0\refint\vinterproject.dll
+C:\Programmering 01\vinterproject\obj\Debug\net8.0\vinterproject.pdb
+C:\Programmering 01\vinterproject\obj\Debug\net8.0\vinterproject.genruntimeconfig.cache
+C:\Programmering 01\vinterproject\obj\Debug\net8.0\ref\vinterproject.dll
