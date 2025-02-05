@@ -94,38 +94,38 @@
 
 
 
-Players A = new();
-Players P = new();
+// Players A = new();
+// Players P = new();
 
-P.HitPoints -= 50;
+// P.HitPoints -= 50;
 
-A.Name = "Teo";
+// A.Name = "Teo";
 
-Console.WriteLine(A.Name);
-Console.WriteLine(P.HitPoints);
+// Console.WriteLine(A.Name);
+// Console.WriteLine(P.HitPoints);
 
-Console.ReadLine();
+// Console.ReadLine();
 
-Fight(A);
-
-
-static void Fight(Players A)
-{
-    Console.WriteLine(A.Name);
-}
+// Fight(A);
 
 
-class Players
-{
-    public string Name = "Elis";
-    public int HitPoints = 250;
-    public int WeaponDamage = 25;
+// static void Fight(Players A)
+// {
+//     Console.WriteLine(A.Name);
+// }
 
-    public int Attack()
-    {
-        return Random.Shared.Next(WeaponDamage, 100);
-    }
-}
+
+// class Players
+// {
+//     public string Name = "Elis";
+//     public int HitPoints = 250;
+//     public int WeaponDamage = 25;
+
+//     public int Attack()
+//     {
+//         return Random.Shared.Next(WeaponDamage, 100);
+//     }
+// }
 
 
 
