@@ -12,3 +12,4 @@ C:\Programmering 01\vinterproject\obj\Debug\net8.0\refint\vinterproject.dll
 C:\Programmering 01\vinterproject\obj\Debug\net8.0\vinterproject.pdb
 C:\Programmering 01\vinterproject\obj\Debug\net8.0\vinterproject.genruntimeconfig.cache
 C:\Programmering 01\vinterproject\obj\Debug\net8.0\ref\vinterproject.dll
+C:\Programmering 01\vinterproject\obj\Debug\net8.0\vinterproject.sourcelink.json
