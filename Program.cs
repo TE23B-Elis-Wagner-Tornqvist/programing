@@ -43,17 +43,33 @@ class Program
         Console.WriteLine("Var snäll att välj en pokemon");
         string answer = Console.ReadLine() ?? string.Empty;
 
+       
+    bool validPokemon = false;
+
+    while (!validPokemon)
+    {
         foreach (Pokemon p in pokemons)
         {
             if (answer.ToLower() == p.name.ToLower())
             {
+                validPokemon = true;
                 Console.WriteLine("Attacks: ");
                 foreach (PokemonAttacks attacks in p.attacks)
                 {
                     Console.WriteLine($"- {attacks.AttackName}: {attacks.AttackDamage}");
                 }
+                break;
             }
         }
+
+        if (!validPokemon)
+        {
+            Console.WriteLine("Invalid choice. Please enter the name of a valid Pokemon:");
+            answer = Console.ReadLine() ?? string.Empty;
+        }
+    }
+
+        
 
         
 
