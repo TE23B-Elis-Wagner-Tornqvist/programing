@@ -7,7 +7,7 @@ class Program
     static void Main()
     {
 
-        Pokemon Pikachu = new Pokemon("Pikachu", 250);
+         Pokemon Pikachu = new Pokemon("Pikachu", 250);
 
 
         Pikachu.AddAttacks("Thunderbolt", 50);
@@ -33,7 +33,65 @@ class Program
         Ditto.AddAttacks("squirt", 80);
         Ditto.AddAttacks("Headbutt", 20);
 
-        List<Pokemon> pokemons = [Pikachu, Squirtle, Charmander, Ditto];
+        Pokemon Mew = new Pokemon("Mew", 250);
+
+        Mew.AddAttacks("Psycic", 80);
+        Mew.AddAttacks("Darkpulse", 50);
+        Mew.AddAttacks("Gravity", 20);
+
+        List<Pokemon> pokemons = [Pikachu, Squirtle, Charmander, Ditto, Mew];
+
+        battleEnemy GymLeaderOne = new battleEnemy("ELis", 1);
+        battleEnemy GymLeaderTwo = new battleEnemy("Teo", 2);
+        battleEnemy GymLeaderThree = new battleEnemy("oscar", 3);
+        battleEnemy GymLeaderFour = new battleEnemy("Anton", 4);
+        battleEnemy GymLeaderFive = new battleEnemy("CoolGuy", 5);
+
+
+        Console.WriteLine("Detta är dina möjliga motståndare: ");
+        List<battleEnemy> battleEnemies = [GymLeaderOne, GymLeaderTwo, GymLeaderThree, GymLeaderFour, GymLeaderFive];
+
+        foreach(battleEnemy gym in battleEnemies)
+        {
+            Console.WriteLine($"Name: {gym.name} Rang: {gym.rang}");
+        }
+        
+        Console.WriteLine("Vem skulle du vilja möta?");
+
+        string gymPick = Console.ReadLine() ?? string.Empty;
+
+        bool successPick = false;
+
+        while(!successPick)
+        {
+
+            foreach(battleEnemy g in battleEnemies)
+            {
+                if(gymPick.ToLower() == g.name.ToLower())
+                {
+                    successPick = true;
+                    Console.WriteLine($"Du har valt att möta {g.name}, {g.name}'s pokemon är: ");
+                    break;
+                }
+
+        
+            }
+
+             if(!successPick)
+                {
+                    Console.WriteLine("Try again bozo");
+                    gymPick = Console.ReadLine() ?? string.Empty;
+                }
+
+
+        }
+
+        Console.ReadLine();
+
+
+        Console.WriteLine($"Hej Spelare! Du ska möta Pokemonmästaren {GymLeaderOne.name}. {GymLeaderOne.name}'s rang är bara {GymLeaderOne.rang} av 10 men det betyder inte att det blir en lätt match!");
+
+    
 
         foreach (Pokemon p in pokemons)
         {
@@ -69,7 +127,7 @@ class Program
         }
     }
 
-        
+
 
         
 
