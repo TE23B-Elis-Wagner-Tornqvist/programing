@@ -7,8 +7,7 @@ class Program
     static void Main()
     {
 
-         Pokemon Pikachu = new Pokemon("Pikachu", 250);
-
+        Pokemon Pikachu = new Pokemon("Pikachu", 250);
 
         Pikachu.AddAttacks("Thunderbolt", 50);
         Pikachu.AddAttacks("Electroball", 80);
@@ -42,10 +41,15 @@ class Program
         List<Pokemon> pokemons = [Pikachu, Squirtle, Charmander, Ditto, Mew];
 
         battleEnemy GymLeaderOne = new battleEnemy("ELis", 1);
+       // GymLeaderOne.AddPokemon("Greninja", 250);
+
+
         battleEnemy GymLeaderTwo = new battleEnemy("Teo", 2);
         battleEnemy GymLeaderThree = new battleEnemy("oscar", 3);
         battleEnemy GymLeaderFour = new battleEnemy("Anton", 4);
         battleEnemy GymLeaderFive = new battleEnemy("CoolGuy", 5);
+
+        
 
 
         Console.WriteLine("Detta är dina möjliga motståndare: ");
@@ -87,10 +91,6 @@ class Program
         }
 
         Console.ReadLine();
-
-
-        Console.WriteLine($"Hej Spelare! Du ska möta Pokemonmästaren {GymLeaderOne.name}. {GymLeaderOne.name}'s rang är bara {GymLeaderOne.rang} av 10 men det betyder inte att det blir en lätt match!");
-
     
 
         foreach (Pokemon p in pokemons)
@@ -122,7 +122,7 @@ class Program
 
         if (!validPokemon)
         {
-            Console.WriteLine("Invalid choice. Please enter the name of a valid Pokemon:");
+            Console.WriteLine("Så där får du inte skirva tyvärr, try again");
             answer = Console.ReadLine() ?? string.Empty;
         }
     }
