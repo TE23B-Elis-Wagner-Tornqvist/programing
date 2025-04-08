@@ -1,5 +1,6 @@
 ﻿
 using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 class Program
 {
 
@@ -41,16 +42,17 @@ class Program
         List<Pokemon> pokemons = [Pikachu, Squirtle, Charmander, Ditto, Mew];
 
         battleEnemy GymLeaderOne = new battleEnemy("ELis", 1);
-       // GymLeaderOne.AddPokemon("Greninja", 250);
-
-
+        GymLeaderOne.assignedPokemon = Pikachu;
         battleEnemy GymLeaderTwo = new battleEnemy("Teo", 2);
+        GymLeaderTwo.assignedPokemon = Ditto;
         battleEnemy GymLeaderThree = new battleEnemy("oscar", 3);
+        GymLeaderThree.assignedPokemon = Squirtle;
         battleEnemy GymLeaderFour = new battleEnemy("Anton", 4);
+        GymLeaderFour.assignedPokemon = Charmander;
         battleEnemy GymLeaderFive = new battleEnemy("CoolGuy", 5);
-
+        GymLeaderFive.assignedPokemon = Mew;
         
-
+        
 
         Console.WriteLine("Detta är dina möjliga motståndare: ");
         List<battleEnemy> battleEnemies = [GymLeaderOne, GymLeaderTwo, GymLeaderThree, GymLeaderFour, GymLeaderFive];
@@ -74,7 +76,9 @@ class Program
                 if(gymPick.ToLower() == g.name.ToLower())
                 {
                     successPick = true;
-                    Console.WriteLine($"Du har valt att möta {g.name}, {g.name}'s pokemon är: ");
+                    Console.WriteLine($"Du har valt att möta {g.name}, {g.name}'s pokemon är: {g.assignedPokemon.name}, HP: {g.assignedPokemon.HP}");
+
+                    
                     break;
                 }
 
@@ -91,7 +95,7 @@ class Program
         }
 
         Console.ReadLine();
-    
+        Console.Clear();
 
         foreach (Pokemon p in pokemons)
         {
@@ -116,6 +120,7 @@ class Program
                 {
                     Console.WriteLine($"- {attacks.AttackName}: {attacks.AttackDamage}");
                 }
+                Console.WriteLine($"Välj en attack att attackera {}");
                 break;
             }
         }
